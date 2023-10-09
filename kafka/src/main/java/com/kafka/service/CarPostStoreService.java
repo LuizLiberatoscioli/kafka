@@ -1,17 +1,18 @@
 package com.kafka.service;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
+import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Service;
 
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@JsonInclude
+import com.kafka.dto.CarPostDto;
+
+@Service
 public interface CarPostStoreService {
+	
+	List<CarPostDto> getCarForSales();
+	
+	void changeCarForSale(CarPostDto carPost , String id);
 
+	
+	void removeCarForSale(String id);
 }
