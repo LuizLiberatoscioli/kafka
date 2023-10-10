@@ -23,6 +23,7 @@ public class CarPostDto {
 	private String createdDate;
 	private Long ownerId;
 	private String ownerName;
+	private String ownerType;
 	private String contact;
 
 }
