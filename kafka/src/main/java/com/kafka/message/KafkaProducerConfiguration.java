@@ -42,4 +42,5 @@ public class KafkaProducerConfiguration {
 		return new KafkaTemplate<>(userProducerFactory());
 	}
 
+	//configuration kafka
 }
