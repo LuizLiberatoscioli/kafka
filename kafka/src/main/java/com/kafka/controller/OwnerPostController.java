@@ -14,10 +14,10 @@ import com.kafka.service.OwnerPostService;
 @RestController
 @RequestMapping("/owner")
 public class OwnerPostController {
-	
+
 	@Autowired
 	private OwnerPostService ownerPostService;
-	
+
 	@PostMapping
 	public ResponseEntity createOwnerCar(@RequestBody OwnerPostDto ownerPostDto) {
 		ownerPostService.createOwnerCar(ownerPostDto);

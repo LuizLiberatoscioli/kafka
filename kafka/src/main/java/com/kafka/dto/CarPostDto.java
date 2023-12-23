@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonInclude
 public class CarPostDto {
-	
+
 	private String model;
 	private String brand;
 	private Double price;
